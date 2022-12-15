@@ -4,5 +4,32 @@
 }
 
 .nav > img {
-  width: 150px;
+  width: 200px;
+}
+
+
+.dog-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dogs{
+  height: 300px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dogs {
+    animation: Dog-spin infinite 20s linear;
+  }
+}
+
+@keyframes Dog-spin {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 100%;
+  }
 }
