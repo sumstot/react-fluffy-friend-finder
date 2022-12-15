@@ -17,19 +17,34 @@
   height: 300px;
   border-radius: 20px;
   z-index: 1;
+  margin: 16px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .dogs {
-    animation: Dog-spin infinite 20s linear;
+    /* animation: Dog-spin infinite 20s linear; */
+    /* animation: moverY infinite 3s alternate; */
+    animation: moverX infinite 15s linear;
   }
 }
 
-@keyframes Dog-spin {
+/* @keyframes Dog-spin {
   from {
     right: 0%;
   }
   to {
     right: 100%;
   }
+} */
+
+/* @keyframes moverY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+} */
+
+@keyframes moverX {
+  0% { transform: translateX(0vw); }
+  90% { transform: translateX(100vw); opacity: 1;}
+  98% {transform: translateX(-20vw); opacity: 0;}
+  100% { transform: translateY(0vw); opactiy: 0; }
 }
