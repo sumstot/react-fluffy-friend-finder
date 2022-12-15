@@ -1,0 +1,8 @@
+.nav {
+  width: 100%;
+  box-shadow: 0 0 8px #b6b6b6;
+}
+
+.nav > img {
+  width: 150px;
+}
