@@ -11,16 +11,25 @@ import dog9 from "../assets/dog9.jpeg"
 
 export default function MainBody() {
   return(
-    <section className='dog-container'>
-      <img src={dog1} alt='a cute dog' className='dogs'/>
-      <img src={dog2} alt='a cute dog' className='dogs'/>
-      <img src={dog3} alt='a cute dog' className='dogs'/>
-      <img src={dog4} alt='a cute dog' className='dogs'/>
-      <img src={dog5} alt='a cute dog' className='dogs'/>
-      <img src={dog6} alt='a cute dog' className='dogs'/>
-      <img src={dog7} alt='a cute dog' className='dogs'/>
-      <img src={dog8} alt='a cute dog' className='dogs'/>
-      <img src={dog9} alt='a cute dog' className='dogs'/>
-    </section>
+    <div>
+      <section className='dog-container'>
+        <img src={dog1} alt='a cute dog' className='dogs'/>
+        <img src={dog2} alt='a cute dog' className='dogs'/>
+        <img src={dog3} alt='a cute dog' className='dogs'/>
+        <img src={dog4} alt='a cute dog' className='dogs'/>
+        <img src={dog5} alt='a cute dog' className='dogs'/>
+      </section>
+      <div className='dog-container dog-container2'>
+        <img src={dog1} alt='a cute dog' className='dogs'/>
+        <img src={dog2} alt='a cute dog' className='dogs'/>
+        <img src={dog3} alt='a cute dog' className='dogs'/>
+        <img src={dog4} alt='a cute dog' className='dogs'/>
+        <img src={dog5} alt='a cute dog' className='dogs'/>
+      </div>
+      <div>
+        <h2>Find you fluffy friend today!</h2>
+      </div>
+    </div>
+
   )
 }

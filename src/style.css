@@ -10,41 +10,31 @@
 
 .dog-container{
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  top: 150px;
+  overflow: visible;
+  position: absolute;
+  white-space: nowrap;
+  animation: dog-container 30s linear infinite;
 }
 
 .dogs{
   height: 300px;
   border-radius: 20px;
-  z-index: 1;
   margin: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .dogs {
-    /* animation: Dog-spin infinite 20s linear; */
-    /* animation: moverY infinite 3s alternate; */
-    animation: moverX infinite 15s linear;
-  }
+
+
+.dog-container2 {
+  animation-delay: 20s;
 }
 
-/* @keyframes Dog-spin {
-  from {
-    right: 0%;
+@keyframes dog-container {
+  0% {
+    left: 100%;
   }
-  to {
-    right: 100%;
+  100% {
+    left: -100%;
   }
-} */
-
-/* @keyframes moverY {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
-} */
-
-@keyframes moverX {
-  0% { transform: translateX(0vw); }
-  90% { transform: translateX(100vw); opacity: 1;}
-  98% {transform: translateX(-20vw); opacity: 0;}
-  100% { transform: translateY(0vw); opactiy: 0; }
 }
